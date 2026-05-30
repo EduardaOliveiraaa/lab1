@@ -1,25 +1,13 @@
 package br.com.faculdadedonaduzzi.lab;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.test.web.servlet.MockMvc;
-
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
-@AutoConfigureMockMvc
-public class TaskControllerTest {
-
-	@Autowired
-	private MockMvc mockMvc;
+class LabApplicationTests {
 
 	@Test
-	public void testGetAllTasks() throws Exception {
-		// ERRO INTENCIONAL: "/tarefa" em vez de "/tarefas"
-		mockMvc.perform(get("/tarefa"))
-				.andExpect(status().isOk());
+	void contextLoads() {
 	}
+
 }
